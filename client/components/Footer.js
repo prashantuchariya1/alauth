@@ -22,7 +22,7 @@ export default function Footer() {
             </a>
           </Link>
         </div>
-        <Link href="https://github.com/scythrine05/alAuth">
+        <Link href="https://github.com/prashantuchariya1/alauth">
           <a target="_blank">
             <div className="contribute">
               <div>contribute to alAuth</div>
