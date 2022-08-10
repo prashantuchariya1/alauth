@@ -1,0 +1,173 @@
+.main {
+  padding: 0 0 5rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  margin: 10vh 0 0 0;
+  color: #fff;
+  line-height: 1.15;
+  font-size: 3rem;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.title span {
+  color: #101820ff;
+}
+.content {
+  display: flex;
+  margin-top: 5vh;
+  width: 70%;
+  padding: 2em;
+  justify-content: space-between;
+}
+.project {
+  width: 55%;
+}
+
+.each {
+  padding: 4vh;
+  font-family: "Lato";
+  height: 39vh;
+  margin-bottom: 6vh;
+  background: #fff;
+  box-shadow: -6px 6px #fff;
+  display: flex;
+  color: #101820ff;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.each p {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.each p:nth-child(2) span {
+  color: #009900;
+}
+.each p:nth-child(3) span {
+  color: #808080;
+}
+.proHead {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.proHead h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+.del_icon {
+  filter: invert(0.5);
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.del_icon:hover {
+  filter: invert(0);
+}
+.option {
+  display: flex;
+  flex-direction: column;
+  padding: 2vh;
+}
+.show {
+  cursor: pointer;
+  padding: 0.4em 1.4em;
+  margin-top: 1.5em;
+  text-align: center;
+  font-size: 2vh;
+  font-weight: bold;
+  color: #101820ff;
+  border: 2px solid #101820ff;
+  box-shadow: -4px 4px #101820ff;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.show:hover {
+  font-weight: bold;
+  box-shadow: none;
+  background: #101820ff;
+  color: #fff;
+}
+
+.opt {
+  cursor: pointer;
+  margin: 0 0.8em 2em 0;
+  padding: 2vh;
+  text-align: center;
+  font-size: 2.6vh;
+  color: #fff;
+  border: 2px solid #fff;
+  box-shadow: -4px 4px #fff;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+.opt:hover {
+  box-shadow: none;
+  background: #fff;
+  color: #101820ff;
+}
+
+@media only screen and (max-width: 768px) {
+  .profile span {
+    font-size: 0.6em;
+  }
+  .title {
+    font-size: 1.8rem;
+  }
+  .content {
+    flex-direction: column-reverse;
+    width: 90%;
+    font-size: 0.8em;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .project {
+    margin-top: 5%;
+    width: 100%;
+  }
+  .each {
+    height: 17em;
+  }
+  .proHead h1 {
+    font-size: 1.8em;
+  }
+  .each p {
+    font-size: 0.9em;
+  }
+  .show {
+    font-size: 0.9em;
+  }
+  .option {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    padding-right: 0;
+  }
+  .opt {
+    padding: 0.8em;
+    font-size: 1em;
+  }
+  .del_icon {
+    filter: invert(0);
+    transform: scale(0.7, 0.7);
+  }
+}

@@ -1,0 +1,144 @@
+.container {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.main {
+  padding: 0 0 5rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  margin: 0;
+  color: #fff;
+  line-height: 1.15;
+  font-size: 6rem;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.title span {
+  color: #101820ff;
+}
+
+.description {
+  color: #fff;
+  font-size: 2.5vh;
+}
+
+.description span {
+  font-weight: bold;
+  margin-right: 10px;
+  color: #101820ff;
+}
+
+.btn {
+  display: flex;
+}
+.explore,
+.signin {
+  margin: 5vh 12vh;
+  padding: 2vh;
+  text-align: center;
+  font-size: 2.6vh;
+  cursor: pointer;
+  box-shadow: -4px 4px #fff;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.signin {
+  color: #fff;
+  box-shadow: -4px 4px #fff;
+  border: 2px solid #fff;
+}
+.explore {
+  color: #101820ff;
+  box-shadow: -4px 4px #101820ff;
+  border: 2px solid #101820ff;
+  font-weight: bold;
+}
+.explore:hover,
+.signin:hover {
+  box-shadow: none;
+}
+.signin:hover {
+  background: #fff;
+  color: #101820ff;
+  font-weight: bold;
+}
+
+.explore:hover {
+  background: #101820ff;
+  color: #fff;
+}
+
+.btn span .icon {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.btn span:hover .icon {
+  filter: brightness(0);
+}
+
+.signin {
+  display: flex;
+  align-items: center;
+}
+
+.signin div {
+  margin-right: 7px;
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    margin-top: 5vh;
+    min-height: 70vh;
+    height: 70vh;
+  }
+
+  .donate {
+    top: 3%;
+    right: 5%;
+  }
+  .title {
+    font-size: 3.5rem;
+  }
+  .description {
+    font-size: 2vh;
+  }
+  .btn {
+    flex-direction: column;
+  }
+  .explore,
+  .signin {
+    padding: 2vh;
+    font-size: 2vh;
+    font-weight: normal;
+    color: #fff;
+    box-shadow: -4px 4px #fff;
+    border: 2px solid #fff;
+  }
+  .signin {
+    padding: 1.5vh;
+  }
+  .explore:hover {
+    background: #fff;
+    color: #101820ff;
+    font-weight: bold;
+  }
+  .footer {
+    font-size: 1.5vh;
+  }
+}
